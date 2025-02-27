@@ -1,0 +1,23 @@
+{
+  "name": "webapp-express",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiffanyElizabeth/webapp-express.git"
+  },
+  "author": "tiffany",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiffanyElizabeth/webapp-express/issues"
+  },
+  "homepage": "https://github.com/TiffanyElizabeth/webapp-express#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
