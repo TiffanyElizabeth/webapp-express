@@ -8,16 +8,16 @@ const moviesRouter = require("./routers/moviesRouter");
 const app = express();
 const { PORT, FE_URL } = process.env;
 
+// middleware CORS (communication with FE)
+app.use(cors({
+    origin: process.env.FE_URL,
+}));
+
 // middleware for static files (images)
 app.use(express.static("public"));
 
 // middleware for req.body parsing 
 app.use(express.json());
-
-// middleware CORS (communication with FE)
-app.use(cors({
-    origin: process.env.FE_URL,
-}));
 
 // routes
 app.use("/movies", moviesRouter);
